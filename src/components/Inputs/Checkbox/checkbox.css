@@ -1,0 +1,92 @@
+:root {
+  --checkbox_label-color: crimson;
+  --checkbox_label-disabled: #ccc;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+    display: grid;
+}
+
+.container_label {
+    margin-bottom: 2rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox_label {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin: 0.5rem;
+}
+
+.checkbox_field {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.1em;
+  height: 1.1em;
+  border: 0.15em solid currentColor;
+  transform: translateY(0.1em);
+
+  display: grid;
+  place-content: center;
+
+  background-color: #fff;
+}
+
+.checkbox_field::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--checkbox_label-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.checkbox_field:checked::before {
+  transform: scale(1);
+}
+
+.checkbox_field:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.checkbox_field:hover {
+    cursor: pointer;
+}
