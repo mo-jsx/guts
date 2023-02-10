@@ -9,6 +9,8 @@
     color: var(--primary);
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
+    vertical-align: baseline;
 }
 .link:hover {
     text-decoration: underline 2px;
