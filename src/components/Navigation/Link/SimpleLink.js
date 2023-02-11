@@ -1,9 +1,15 @@
 import React from 'react';
 import "./simplelink.css";
 
-const SimpleLink = ({ content, href, variant, ...rest}) => {
+const SimpleLink = ({ content, href, variant, children, ...rest}) => {
   return (
-    <a href={href} className={`link ${variant}`} {...rest}>{content}</a>
+    <>
+    {
+      content 
+      ? (<a href={href} className={`link ${variant}`} {...rest}>{content}</a>)
+      :(<a href={href} className={`link ${variant}`} {...rest}>{children}</a>)
+    }
+    </>
   )
 }
 
