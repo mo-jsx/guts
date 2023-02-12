@@ -30,6 +30,9 @@ web_modules/
 
 # Optional npm cache directory
 .npm
+.npmrc
+
+
 
 # Optional eslint cache
 .eslintcache
@@ -68,3 +71,8 @@ web_modules/
 # website: https://storybook.js.org/
 .storybook/
 storybook-static/
+
+
+###
+.prettierrc
+package-lock.js
