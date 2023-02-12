@@ -106,9 +106,7 @@ h5::before,
 h6::before,
 p::before,
 p::after {
-    content: " ";
-    display: block;
-    height: 1rem;
+    margin: 1rem 0 0 0;
 }
 h1::after,
 h2::after,
@@ -116,9 +114,7 @@ h3::after,
 h4::after,
 h5::after,
 h6::after {
-    content: " ";
-    display: block;
-    height: 2rem;
+    margin: 0 0 2rem 0;
 }
 
 p {
