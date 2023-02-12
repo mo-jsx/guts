@@ -60,6 +60,9 @@ web_modules/
 # Serverless Webpack directories
 .webpack/
 
+### Jest Test Runner ###
+*.test.js
+
 ### StorybookJs ###
 # gitignore template for the Storybook, UI guide for front apps
 # website: https://storybook.js.org/
