@@ -84,4 +84,4 @@ const App = () => {
 export default App;
 ```
 #### **Result** 
-![White FlatButton](./public//WhiteFlatButton.gif)
+![White FlatButton](https://media.giphy.com/media/Fg5qQ8QrR2NiL9vqTR/giphy.gif)
