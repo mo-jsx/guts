@@ -20,6 +20,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+public/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -51,9 +52,6 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
-
-# vuepress v2.x temp and cache directory
-.temp
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
