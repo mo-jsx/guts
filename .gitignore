@@ -75,4 +75,4 @@ storybook-static/
 
 ###
 .prettierrc
-package-lock.js
+package-lock.json
