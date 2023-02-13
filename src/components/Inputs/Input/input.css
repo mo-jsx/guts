@@ -19,7 +19,6 @@
 }
 
 .input:hover {
-    border: 2px solid var(--primary-color);
     transition: 0.2s all linear;
     box-shadow: 0px 2px 8px var(--shadow-color);
 }
