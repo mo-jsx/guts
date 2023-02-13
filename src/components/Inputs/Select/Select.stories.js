@@ -1,16 +1,16 @@
-import Dropdown from './Dropdown';
+import Select from './Select';
 import Center from '../../Utils/Center';
 
 export default {
-    title: "CTA/Dropdown",
-    component: Dropdown,
+    title: "CTA/Select",
+    component: Select,
     decorators: [Story => <Center><Story /></Center>]
 }
 
-const Template = args => <Dropdown {...args} />
+const Template = args => <Select {...args} />
 
-export const DropdownMenu = Template.bind({});
-DropdownMenu.args = {
+export const SelectMenu = Template.bind({});
+SelectMenu.args = {
     options: [
         {
             value: 0,
@@ -33,5 +33,5 @@ DropdownMenu.args = {
             content: "Baz"
         }
     ],
-    label: "Dropdown Menu",
+    label: "Select Menu",
 }

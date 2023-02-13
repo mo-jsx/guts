@@ -1,7 +1,7 @@
 import React from "react";
-import "./dropdown.css";
+import "./select.css";
 
-const Dropdown = ({ options, label, ...rest }) => {
+const Select = ({ options, label, ...rest }) => {
     return (
         <>
             <label htmlFor={label}>{label}</label>
@@ -31,4 +31,4 @@ const Dropdown = ({ options, label, ...rest }) => {
     );
 };
 
-export default Dropdown;
+export default Select;

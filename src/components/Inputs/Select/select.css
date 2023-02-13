@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;700&display=swap');
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --select-border: black;
-    --select-focus: crimson;
-    --select-arrow: var(--select-border);
-}
+@import url("../../../../global.css");
 
 select {
     -webkit-appearance: none;
@@ -39,12 +27,12 @@ select::-ms-expand {
     position: relative;
     min-width: 15ch;
     max-width: 30ch;
-    border: 2px solid var(--select-border);
+    border: 2px solid var(--text-color);
     padding: 0.25em 0.5em;
     font-size: 1rem;
     cursor: pointer;
     line-height: 1.4rem;
-    background-color: #fff;
+    background-color: var(--base-color);
     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
 .select select,
@@ -56,7 +44,7 @@ select::-ms-expand {
     justify-self: end;
     width: 0.8em;
     height: 0.5em;
-    background-color: var(--select-arrow);
+    background-color: var(--text-color);
     -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
@@ -67,7 +55,7 @@ select:focus + .focus {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border: 2px solid var(--select-focus);
+    border: 2px solid var(--primary-color);
     border-radius: inherit;
 }
 
@@ -86,6 +74,6 @@ body {
     place-content: center;
     grid-gap: 0.5rem;
     font-family: 'Martian Mono', monospace;
-    background-color: #e9f2fd;
+    background-color: var(--base-color);
     padding: 1rem;
 }
