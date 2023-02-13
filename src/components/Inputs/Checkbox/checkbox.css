@@ -1,17 +1,4 @@
-:root {
-  --checkbox_label-color: crimson;
-  --checkbox_label-disabled: #ccc;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
+@import url("../../../../global.css");
 
 .container {
     display: grid;
@@ -32,24 +19,22 @@ body {
 }
 
 .checkbox_label {
-  font-family: system-ui, sans-serif;
+  font-family: "Martian Mono", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.4;
+
   display: grid;
   grid-template-columns: 1em auto;
   gap: 0.5em;
+  
   margin: 0.5rem;
 }
 
 .checkbox_field {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
-  /* Remove most all native input styles */
   appearance: none;
-  /* For iOS < 15 */
-  background-color: var(--form-background);
-  /* Not removed via appearance */
+  background-color: var(--base-color);
   margin: 0;
 
   font: inherit;
@@ -62,7 +47,7 @@ body {
   display: grid;
   place-content: center;
 
-  background-color: #fff;
+  background-color: var(--base-color);
 }
 
 .checkbox_field::before {
@@ -73,8 +58,7 @@ body {
   transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--checkbox_label-color);
-  /* Windows High Contrast Mode */
+  box-shadow: inset 1em 1em var(--primary-color);
   background-color: CanvasText;
 }
 
