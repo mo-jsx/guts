@@ -1,24 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;700&display=swap');
+@import url("../../../../global.css");
 
-:root {
-    --primary: black;
-    --secondary: crimson;
-}
 .link {
-    font-family: 'Martian Mono', monospace;
-    color: var(--primary);
-    font-size: 1rem;
+    color: var(--primary-color);
     text-decoration: none;
     text-align: center;
     vertical-align: baseline;
 }
-.link:hover {
+.link:hover, 
+.link__secondary:hover {
     text-decoration: underline 2px;
 }
 
 .link__secondary {
-    color: var(--secondary);
-}
-.link__secondary:hover {
-    text-decoration: underline 2px;
+    color: var(--secondary-color);
 }
