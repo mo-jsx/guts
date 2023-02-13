@@ -1,59 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;700&display=swap');
+@import url("../../../../../global.css");
 
-* {
-    font-family: 'Martian Mono', monospace;
-
-    margin: 0;
-    padding: 0;
-}
-
+/* ************************** */
+/* MAIN DIV */
+/* ************************** */
 .main_header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    width: 100%;
 
+    width: 100vw;
+    height: 10vh;
+}
+.header_logo, .header_menu, .header_actions {
     margin: 0;
     padding: 0;
 }
 
-.header_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 20%;
-}
-
-.header_logo h6 {
-    font-weight: 400;
+/* ************************** */
+/* SUB DIVS */
+/* ************************** */
+/* SHARED CLASSES */
+.center_content {
+    align-content: center;
     text-align: center;
 }
+.navigation_link {
+    flex: 1;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+.inline_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-.header_logo h2, .header_logo h6 {
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
-.header_right {
-    width: auto;
-
-    font-size: 1rem;
-    font-weight: 300;
+/* LOGO */
+.header_logo {
+    flex: 3;
 }
-.header_right ul {
-    display: flex;
-    flex-direction: row;
-}
-.header_right li {
-    list-style: none;
+.logo_img {
+    width: 128px;
 }
 
-.header_left {
-    display: flex;
-    flex-direction: row;
+/* MENU */
+.header_menu {
+    flex: 10;
+}
 
-    width: 30%;
+/* ACTIONS */
+.header_actions {
+    flex: 4;
 }
