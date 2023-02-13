@@ -1,16 +1,4 @@
-:root {
-  --radio_label-color: crimson;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
+@import url("../../../../global.css");
 
 .container {
     display: grid;
@@ -20,33 +8,31 @@ body {
 .vertical {
     display: flex;
     flex-direction: column;
-    /* margin: 0.5rem; */
 }
 
 .horizontal {
     display: flex;
     flex-direction: row;
-    /* margin: 0.5rem; */
 }
 
 .radio_label {
-  font-family: system-ui, sans-serif;
+  font-family: "Martian Mono", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.4;
   gap: 0.5em;
   cursor: pointer;
-
+  color: var(--text-color);
 }
 
 .radio_label:focus-within {
-  color: var(--radio_label-color);
+  color: var(--primary-color);
 }
 
 .radio_field {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--form-background);
+  background-color: var(--base-color);
   margin: 0;
 
   font: inherit;
@@ -68,12 +54,12 @@ body {
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--radio_label-color);
+  box-shadow: inset 1em 1em var(--primary-color);
   background-color: CanvasText;
 }
 
 .radio_field:focus {
-  outline: max(2px, 0.15em) solid currentColor;
+  outline: max(2px, 0.15em) solid var(--primary-color);
   outline-offset: max(2px, 0.15em);
 }
 
