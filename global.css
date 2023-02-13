@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;700&display=swap");
 
 :root {
-    --primary-color: #ad143c;
+    --primary-color: #dc143c;
     --primary-shade: #ec3257;
 
     --secondary-color: #00008b;
@@ -20,6 +20,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: "Martian Mono", sans-serif;
 }
 
 /* Remove default margin */
@@ -34,6 +35,7 @@ blockquote,
 dl,
 dd {
     margin: 0;
+
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -119,4 +121,14 @@ h6::after {
 
 p {
     color: var(--text-color);
+}
+
+/* Buttons */
+button {
+    overflow: visible;
+    border: 0;
+    line-height: 1rem;
+    
+    padding: 0;
+    margin: 1.8rem;
 }
