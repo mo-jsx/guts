@@ -1,1 +1,35 @@
 @import url("../../../../global.css");
+
+.main_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 1rem 0rem 0rem 0rem;
+
+    width: 100vw;
+    height: auto;
+
+    text-align: center;
+}
+
+.section_titles {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.title {
+    margin: 0rem 0rem 1rem 0rem;
+    text-decoration: none;
+}
+.title:hover {
+    text-decoration: underline 2px;
+}
+.footer_section, 
+.section_titles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
