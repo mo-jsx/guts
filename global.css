@@ -123,6 +123,10 @@ p {
     color: var(--text-color);
 }
 
+label {
+    margin: 0 0 1rem 0;
+}
+
 /* Buttons */
 button {
     overflow: visible;
