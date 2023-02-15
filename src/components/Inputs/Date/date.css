@@ -1,0 +1,7 @@
+@import url("../../../../global.css");
+
+.date {
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+}
