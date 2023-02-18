@@ -1,0 +1,51 @@
+@import url("../../../../global.css");
+
+/* Card container */
+.card_container {
+    width: 250px;
+    height: 444px;
+
+    border: 2px solid var(--text-color);
+}
+.card_container:hover {
+    transform: scale(0.95);
+    transition: 0.4s ease-in-out;
+    box-shadow: 2px 8px 8px var(--shadow-color);
+}
+
+/* Card Image */
+.card_pic {
+    width: 300px;
+    height: 60%;
+}
+.card_pic img {
+    width: 300px;
+    height: 100%;
+}
+
+/* Card Desc */
+.card_desc {
+    height: 40%;
+    margin: 0;
+    padding: 1rem;
+}
+.card_desc h2 span {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+.card_desc h2 span:hover {
+    cursor: pointer;
+    text-decoration: underline 2px;
+}
+.card_desc h4 {
+    font-size: 0.9rem;
+}
+.card_desc p {
+    font-size: 0.8rem;
+    margin: 1rem 0rem;
+}
