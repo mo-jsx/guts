@@ -22,6 +22,7 @@ A react components library.
     - Select 
     - Checkbox
     - Radio button
+    - Date
 
 - Navigation
 
@@ -31,6 +32,10 @@ A react components library.
     - Footer 
     - Mobile Menu
     - Breadcumber 
+
+- Dashboard
+
+    - Card
 
 --- 
 ## Design System 
