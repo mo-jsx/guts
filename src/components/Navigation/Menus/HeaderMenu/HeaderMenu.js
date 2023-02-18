@@ -4,7 +4,7 @@ import "./headermenu.css";
 
 const HeaderMenu = ({ titles, img_uri, img_alt, actions, ...rest }) => {
     return (
-        <header className='main_header'>
+        <header className='main_header flex_row justify_sp_bet'>
             <div className='header_logo center_content'>
                 <SimpleLink href="/">
                     <img src={img_uri} alt={img_alt} className='logo_img' />

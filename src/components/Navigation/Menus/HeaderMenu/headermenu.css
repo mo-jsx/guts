@@ -4,10 +4,6 @@
 /* MAIN DIV */
 /* ************************** */
 .main_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     width: 100vw;
     height: 10vh;
 }
