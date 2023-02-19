@@ -9,6 +9,7 @@
 .link:hover, 
 .link__secondary:hover {
     text-decoration: underline 2px;
+    cursor: pointer;
 }
 
 .link__secondary {
