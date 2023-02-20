@@ -1,10 +1,10 @@
 {
-  "name": "guts",
+  "name": "@mojsx/guts",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react component libray",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest -- -t",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -24,6 +24,10 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
