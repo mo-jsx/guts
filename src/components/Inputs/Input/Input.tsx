@@ -1,7 +1,17 @@
 import React from "react";
 import "./input.css";
 
-const SimpleInput = ({ label, type, placeholder, size = "medium", ...rest }) => {
+export interface SimpleInputPropos {
+    label: string, 
+    type: string, 
+    placeholder: string,
+    size: "small" | "medium" | "large",
+    rest: string[]
+}
+
+const SimpleInput = (props: SimpleInputPropos) => {
+    const { label, type, placeholder, size = "medium", ...rest } = props;
+
     return (
         <>
             <label htmlFor={label} className="label">{label}</label>
