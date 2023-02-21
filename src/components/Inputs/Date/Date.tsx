@@ -1,7 +1,13 @@
 import React from 'react';
 import "./date.css";
 
-const Date = ({ label }) => {
+export interface DateProps {
+  label: string,
+}
+
+const Date = (props: DateProps) => {
+  const { label } = props;
+  
   return (
     <>
         <label htmlFor={label}>{label}</label>
