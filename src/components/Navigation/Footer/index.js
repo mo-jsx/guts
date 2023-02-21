@@ -1,1 +1,0 @@
-export { defaut as Footer } from "./Footer"
