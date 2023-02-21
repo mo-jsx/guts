@@ -1,7 +1,17 @@
 import React from 'react';
 import "./textarea.css";
 
-const Textarea = ({rows, size, label, placeholder, ...rest}) => {
+export interface TextareaProps {
+  rows: number,
+  size: string,
+  label: string,
+  placeholder: string,
+  rest: string[],
+}
+
+const Textarea = (props: TextareaProps) => {
+  const {rows, size, label, placeholder, ...rest} = props;
+
   return (
     <>
         <label htmlFor={label}>{label}</label>
