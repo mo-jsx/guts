@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -- -t",
+    "sass": "sass .:. --watch --no-source-map",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -23,9 +24,12 @@
     "@storybook/manager-webpack4": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.28",
     "babel-loader": "^8.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.58.3",
+    "typescript": "^4.9.5"
   },
   "peerDependencies": {
     "react": "^18.2.0",
