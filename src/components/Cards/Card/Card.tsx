@@ -1,12 +1,21 @@
 import React from "react";
-import SimpleLink from "../../Navigation/Link";
+import Link from "../../Navigation/Link";
 import "./card.css";
 
-const Card = ({ image, imageDesc, title, subtitle, cardDesc }) => {
+export interface CardProps {
+    image: string,
+    imageDesc: string,
+    title: string,
+    subtitle: string,
+    cardDesc: string,
+}
+const Card = (props: CardProps) => {
+    const { image, imageDesc, title, subtitle, cardDesc } = props; 
+    
     return (
         <div className='card_container flex_col justify_sp_bet align_center'>
             <picture className='card_pic'>
-                <source srcset={image} media='(orientation: portrait)' />
+                <source srcSet={image} media='(orientation: portrait)' />
                 <img src={image} alt={imageDesc} />
             </picture>
             <div className='card_desc flex_col justify_start align_start'>
@@ -23,7 +32,7 @@ const Card = ({ image, imageDesc, title, subtitle, cardDesc }) => {
                 {
                     cardDesc.length < 30 
                     ? <p>{cardDesc}</p>
-                    : <p>{cardDesc.slice(0, 30)}... <SimpleLink content="Afficher tout" href={`/${title}`} /></p>
+                    : <p>{cardDesc.slice(0, 30)}... <Link content="Afficher tout" href={`/${title}`} /></p>
                 }
             </div>
         </div>

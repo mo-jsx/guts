@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleLink from "../Link";
+import SimpleLink from "../../Link";
 import "./footer.css";
 
 const Footer = ({ sections, ...rest }) => {

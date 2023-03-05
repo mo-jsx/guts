@@ -1,7 +1,19 @@
 import React from "react";
 import "./select.css";
 
-const Select = ({ options, label, ...rest }) => {
+interface optionType {
+    value: number,
+    content: string,
+}
+export interface SelectProps {
+    options: optionType[],
+    label: string, 
+    rest: string[],
+}
+
+const Select = (props: SelectProps) => {
+    const { options, label, ...rest } = props;
+
     return (
         <>
             <label htmlFor={label}>{label}</label>

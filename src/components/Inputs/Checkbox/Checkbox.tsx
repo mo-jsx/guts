@@ -1,7 +1,16 @@
 import React from 'react';
 import "./checkbox.css";
 
-const Checkbox = ({ options, label, orientation, ...rest }) => {
+export interface CheckboxProps {
+  options: string[],
+  label: string,
+  orientation: "vertical" | "horizontal",
+  rest: string[]
+}
+
+const Checkbox = (props: CheckboxProps) => {
+  const { options, label, orientation, ...rest } = props;
+  
   return (
     <div className="container" {...rest}>
         <label htmlFor={label} className="container_label">{label}</label>

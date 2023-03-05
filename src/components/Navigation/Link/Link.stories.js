@@ -1,14 +1,14 @@
 import React from 'react';
-import SimpleLink from './SimpleLink';
+import Link from './Link';
 import Center from "../../Utils/Center";
 
 export default {
     title: "Navigation/Simple Link",
-    component: SimpleLink,
+    component: Link,
     decorators: [Story => <Center><Story /></Center>]
 }
 
-const Template = args => <SimpleLink {...args} />
+const Template = args => <Link {...args} />
 
 export const Default = Template.bind({});
 Default.args = {

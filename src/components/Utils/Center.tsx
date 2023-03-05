@@ -1,12 +1,16 @@
-import React, { ReactNode } from "react";
+import React from 'react';
 import "./center.css";
 
 export interface CenterProps {
-    children: ReactNode;
+  children: React.ReactNode
 }
 
 const Center = (props: CenterProps) => {
-    return <div className='center'>{props.children}</div>;
-};
+  const { children } = props; 
+  
+  return (
+    <div className="center">{children}</div>
+  )
+}
 
-export default Center;
+export default Center
